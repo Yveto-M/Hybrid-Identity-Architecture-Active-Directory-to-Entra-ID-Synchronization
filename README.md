@@ -1,0 +1,1 @@
+# Hybrid-Identity-Architecture-Active-Directory-to-Entra-ID-Synchronization
