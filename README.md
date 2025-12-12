@@ -16,7 +16,7 @@ In this project, I engineered a **Hybrid Identity Solution** to bridge this gap.
 * **Directory Services:** Active Directory Domain Services (AD DS)
 * **Automation:** PowerShell (Active Directory Module)
 * **Identity Bridge:** Microsoft Entra Connect (Sync Engine)
-* **Cloud Tenant:** Microsoft Entra ID (formerly Azure AD)
+* **Cloud Tenant:** Microsoft Entra ID 
 
 ---
 
