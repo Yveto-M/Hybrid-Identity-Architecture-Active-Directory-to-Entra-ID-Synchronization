@@ -89,7 +89,7 @@ The final validation confirmed that the "Old World" users (Leddy, PJ, etc.) were
 
 ### Verification
 **1. Sync Engine Configuration:**
-![Entra Connect Writeback Config]<img width="829" height="343" alt="Screenshot 2025-12-12 211450" src="https://github.com/user-attachments/assets/4b1904be-48d6-448f-ba20-5e9619248f27" />
+Entra Connect Writeback Config:<img width="829" height="343" alt="Screenshot 2025-12-12 211450" src="https://github.com/user-attachments/assets/4b1904be-48d6-448f-ba20-5e9619248f27" />
 
 Figure 6:Successfully configured the sync engine without permission errors.
 
@@ -98,7 +98,7 @@ Figure 6:Successfully configured the sync engine without permission errors.
 
 
 **2. Cloud Integration Status:**
-![SSPR Enabled in Cloud]<img width="811" height="444" alt="Screenshot 2025-12-12 212715" src="https://github.com/user-attachments/assets/91958be1-297a-4ecd-849f-d423b99cfd31" />
+SSPR Enabled in Cloud:<img width="811" height="444" alt="Screenshot 2025-12-12 212715" src="https://github.com/user-attachments/assets/91958be1-297a-4ecd-849f-d423b99cfd31" />
 
 Figure 7:Verified that the On-Premises Integration status is active in the Entra Admin Center, confirming the two-way sync bridge is operational.*
 
