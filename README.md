@@ -77,9 +77,30 @@ The final validation confirmed that the "Old World" users (Leddy, PJ, etc.) were
 
 <img width="732" height="544" alt="On-premises sync-users-5" src="https://github.com/user-attachments/assets/db981375-823f-446d-94e9-d8db1fe3a109" />
 
-*Figure 5: The "Money Shot" — Verifying that on-premise users are now present in the Cloud Tenant with Sync enabled.*
+*Figure 5:Verifying that on-premise users are now present in the Cloud Tenant with Sync enabled.*
 
 ---
+## Phase 5: Advanced Configuration (Self-Service Password Reset)
+**Objective:** Enabled Password Writeback to allow users to reset their passwords in the Cloud (Entra ID) and have the changes synchronize back to the On-Premise Domain Controller. This ensures users can recover their accounts even if they are working remotely without a VPN.
+
+### Configuration Steps
+* **Permission Hardening:** Manually granted **"Reset Password"** and **"Write lockoutTime"** permissions to the `ADSyncMSA` service account on the domain root via Active Directory Users and Computers (ADUC).
+* **Sync Engine Config:** Re-configured the Entra Connect Sync engine to enable the **Password Writeback** feature.
+
+### Verification
+**1. Sync Engine Configuration:**
+![Entra Connect Writeback Config]<img width="829" height="343" alt="Screenshot 2025-12-12 211450" src="https://github.com/user-attachments/assets/4b1904be-48d6-448f-ba20-5e9619248f27" />
+
+Figure 6:Successfully configured the sync engine without permission errors.
+
+
+&nbsp;
+
+
+**2. Cloud Integration Status:**
+![SSPR Enabled in Cloud]<img width="811" height="444" alt="Screenshot 2025-12-12 212715" src="https://github.com/user-attachments/assets/91958be1-297a-4ecd-849f-d423b99cfd31" />
+
+Figure 7:Verified that the On-Premises Integration status is active in the Entra Admin Center, confirming the two-way sync bridge is operational.*
 
 &nbsp;
 
